@@ -17,11 +17,11 @@
 
         <!-- Moved the Horiseon logo and anchored menu options into the header, got rid of the span within the Horiseon logo, will attempt to find a different way to color the 'seo' in Horiseon -->
         <!-- added class "logo" in order to make styling adjustments to the logo in any place that it appears -->
-        <h1 class="logo">Horiseon</h1>
+        <h1 class="logo">Hori<span style="color: #d9dcd6">seo</span>n</h1>
     
         <!-- Added a unique id to the menu options at the top of the page for formatting purposes.  Moved menu options into the header. Got rid of unnecessary divs.-->
         <!-- Made use of nav element, which increases accessability for screen readers -->
-        <nav id="menu-options">
+        <nav>
                
             <a href="#search-engine-optimization">Search Engine Optimization</a>
 
@@ -41,71 +41,77 @@
             <img src="./assets/images/digital-marketing-meeting.jpg" alt="A digital marketing meeting">
         </div>
 
-    <div class="content">
+    <main class="content">
 
         <!-- Changed "search-engine-optimization" into a unique id to match other, similar elements -->
         <!-- Cleaned up and standardized each of the content div blocks -->
-        <div id="search-engine-optimization">
+        <section id="search-engine-optimization">
            
-                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Search engine optimization image"/>
-                <h2 class="float-left">Search Engine Optimization</h2>
-            
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </div>
+                <img src="./assets/images/search-engine-optimization.jpg" class="flex-left" alt="Search engine optimization image"/>
+                
+            <aside class="flex-right">  
+                <h2>Search Engine Optimization</h2>
+                <p>
+                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                </p>
+            </aside>
+        </section>
 
-        <div id="online-reputation-management" class="online-reputation-management">
+        <section id="online-reputation-management" class="flex-right">
             
-                <h2 class="float-left">Online Reputation Management</h2>    
-                <img src="./assets/images/online-reputation-management.jpg" class="float-left" alt="Online reputation image"/>
-                            
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-        </div>
+            <aside class="flex-left" >
+                <h2>Online Reputation Management</h2>
+                <p>
+                    The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                </p>
+            </aside> 
 
-        <div id="social-media-marketing" class="social-media-marketing">
+            <img src="./assets/images/online-reputation-management.jpg" alt="Online reputation image"/>
+        </section>
+
+        <section id="social-media-marketing">
             
-                <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social media marketing image"/>
-                <h2 class="float-left">Social Media Marketing</h2>
-           
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
-        </div>
+            <img src="./assets/images/social-media-marketing.jpg" alt="Social media marketing image" class="flex-left"/>
+            
+            <aside class="flex-right">
+                <h2>Social Media Marketing</h2>
+                <p>
+                    Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                </p>
+            </aside>
+        </section>
 
-    </div>
+    </main>
 
     <!-- This block of content is to create a complimentary bar on the right hand side of the content block with supplemental information -->
-    <div class="benefits">
+    <aside class="benefits">
 
         <!-- Standardized div blocks under the benefits section, added alt tags to all images -->
-        <div class="benefit-lead">
+        <section class="benefit-lead">
             <h3>Lead Generation</h3>
             <img src="./assets/images/lead-generation.png" alt="Lead generation image"/></img>
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
-        </div>
+        </section>
 
-        <div class="benefit-brand">
+        <section class="benefit-brand">
             <h3>Brand Awareness</h3>
             <img src="./assets/images/brand-awareness.png" alt="Brand awareness image"/></img>
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </div>
+        </section>
 
-        <div class="benefit-cost">
+        <section class="benefit-cost">
             <h3>Cost Management</h3>
             <img src="./assets/images/cost-management.png" alt="Cost management image"></img>
             <p>                
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
+        </section>
 
-    </div>
+    </aside>
 </body>
 
 <!-- Made an actual footer tag to replace the div named 'footer' -->
